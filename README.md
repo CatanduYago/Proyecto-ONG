@@ -7,7 +7,7 @@ Antonio y Ale Gonzalez: Fran cuesta
 ## Secciones
 
 ### Frank de la jungla
-
+Ale: tengo que poner que hace frank, todo sobre la vida de frank en una pagina aparte
 ### Seccion 2
 
 ### Seccion 3
