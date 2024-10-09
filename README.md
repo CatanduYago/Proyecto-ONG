@@ -6,7 +6,7 @@ Antonio y Ale Gonzalez: Fran cuesta
 
 ## Secciones
 
-### Frank de la jungra
+### Frank de la jungla
 
 ### Seccion 2
 
