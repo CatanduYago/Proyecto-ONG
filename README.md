@@ -9,7 +9,7 @@ Antonio y Ale Gonzalez: Fran cuesta
 ### Frank de la jungla
 Ale: tengo que poner que hace frank, todo sobre la vida de frank en una pagina aparte
 ### Seccion 2
-
+Página web de una protectora de animales con una página principal dividida en cuatro secciones: sección de quiénes somos, carrusel de imágenes de animales, sección de la importancia de colaborar y footer con maneras de contactar y redes sociales.
 ### Seccion 3
 
 ## Bibliografia
