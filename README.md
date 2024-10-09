@@ -11,3 +11,8 @@ Ale: tengo que poner que hace frank, todo sobre la vida de frank en una pagina a
 ### Seccion 2
 
 ### Seccion 3
+
+## Bibliografia
+
+- [Paleta de colores](https://coolors.co/071e22-1d7874-679289-f4c095-ee2e31)
+- [Diseño](https://www.figma.com/design/hYBOyQaiCwswWqN2OVdd5O/Untitled?node-id=0-1&t=4Hld9jGuPimRevyn-1)
