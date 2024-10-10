@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fundación Salve | Portada</title>
     <link rel="stylesheet" href="./assets/styles.css">
+    <script src="./assets/script.js" defer></script>
 </head>
 
 <body>
@@ -13,13 +14,12 @@
     <header>
         <nav>
             <div class="logo">
-                <img src="./assets/logo.png" alt="Logo de la Fundación Salve">
-                <span>Fundacion <br>Salve</span>
+                <img src="./assets/logo.png" alt="Logo">
             </div>
             <div class="anchors">
                 <ul>
                     <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="#org1">Santuario Frank</a></li>
+                    <li><a href="#org1">Santuario Libertad</a></li>
                     <li><a href="#org2">Org 2</a></li>
                     <li><a href="#org3">Org 3</a></li>
                 </ul>
@@ -37,34 +37,65 @@
                     <img src="./assets/carrusel2.jpg" alt="Photo 2">
                 </div>
                 <div class="carousel-item">
-                    <img src="./assets/carrusel2.jpg" alt="Photo 3">
+                    <img src="./assets/adana.png" alt="Photo 3">
                 </div>
             </div>
+
+            <div class="carousel-indicators">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+                <span class="dot" data-slide="2"></span>
+            </div>
         </section>
-        <section>
-            <div>
+
+        <section class="organizacion">
+
+            <div id="titulos">
                 <h1>¡Colabora!</h1>
-                <h2>Conoce las organizaciones mas importantes:</h2>
+                <h2>Conoce las organizaciones más importantes:</h2>
             </div>
 
-            <div>
+            <article id="org1" class="organizacion-item">
+                <div class="org-text">
+                    <a href="/FrankJungla/portada/index.html"><h3>Santuario Libertad de Frank Cuesta</h3></a>
+                    <p>El Santuario de Libertad, fundado por Frank Cuesta en Tailandia, es un refugio dedicado a la
+                        conservación y protección de animales salvajes en peligro de extinción. Aquí, se rescatan,
+                        rehabilitan y liberan animales víctimas de la explotación ilegal y del tráfico de especies.
+                        Además, el santuario trabaja en la reeducación y sensibilización de las comunidades locales
+                        sobre la importancia de la vida silvestre y la conservación del medio ambiente.</p>
+                </div>
+                <div class="org-image">
+                    <img src="./assets/santuario-libertad.jpg" alt="Santuario libertad">
+                </div>
+            </article>
 
-                <article id="org1">
-                    <h3>Santuario Frank de la Jungla1</h3>
-                    <p>Descripción </p>
-                </article>
+            <article id="org2" class="organizacion-item-reverse">
+                <div class="org-text">
+                    <a href=""><h3>Org 2</h3></a>
+                    <p>Descripción sobre la organización 2. Especificaciones sobre sus actividades y su impacto en la
+                        comunidad.</p>
+                </div>
+                <div class="org-image">
+                    <img src="./assets/carrusel2.jpg" alt="Org 2">
+                </div>
+            </article>
 
-                <article id="org2">
-                    <h3>Org 2</h3>
-                    <p>Descripción</p>
-                </article>
-
-                <article id="org3">
-                    <h3>Org 3</h3>
-                    <p>Descripción</p>
-                </article>
-            </div>
+            <article id="org3" class="organizacion-item">
+                <div class="org-text">
+                    <a href=""><h3>Org 3</h3></a>
+                    <p>ADANA Badajoz es una organización sin ánimo de lucro dedicada a la protección y defensa de los
+                        derechos de los animales en Badajoz. Lleva más de 25 años trabajando en la acogida y adopción de
+                        animales, principalmente perros y gatos, promoviendo una adopción responsable y ofreciendo
+                        servicios como voluntariado y concienciación sobre el bienestar animal. También realizan
+                        actividades para recaudar fondos y concienciar a la comunidad, como mercadillos, talleres y
+                        charlas​</p>
+                </div>
+                <div class="org-image">
+                    <img src="./assets/adana.png" alt="Org 3">
+                </div>
+            </article>
         </section>
+
 
     </main>
     <footer>
