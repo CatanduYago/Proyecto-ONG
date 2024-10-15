@@ -45,4 +45,12 @@ nav div {
     background-repeat: no-repeat;
     border: 1px solid;
     height: 600px;
+    
 }
+
+@media (max-width: 600px) {
+    body {
+        background-color: red;
+    }
+}
+
