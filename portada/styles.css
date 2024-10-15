@@ -1,11 +1,12 @@
 @font-face {
     font-family: 'Almarai';
-    src: url("./Almarai-Regular.ttf");
+    src: url("Almarai-Regular.ttf");
 }
 body {
     margin: 0;
     padding: 0;
     background-color: #ffdcbf;
+    font-family: 'Almarai';
     
 }
 
@@ -14,7 +15,6 @@ nav {
     justify-content: space-around;
     height: 80px;
     background-color: #1D7874;
-    font-family: 'Almarai';
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #ffffff;
