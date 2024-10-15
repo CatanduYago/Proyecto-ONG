@@ -91,7 +91,7 @@ body {
 }
 
 .imagenes img {
-    width: 300px;
+    width: 25%;
     border-radius: 10px;
     transition: transform 0.3s ease;
 }
