@@ -44,12 +44,13 @@ nav div {
     background-image: url(./img/petcare-header.jpg);
     background-repeat: no-repeat;
     border: 1px solid;
-    
+    height: 660px;
 }
 
-@media (max-width: 600px) {
-    body {
-        background-color: red;
+@media (max-width: 768px) {
+    .img_cabecera{
+        height: 500px;
+        width: 100%;
     }
 }
 
