@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Almarai';
+    src: url("./Almarai-Regular.ttf");
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffdcbf;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    height: 80px;
+    background-color: #1D7874;
+    font-family: 'Almarai';
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.anchors ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.anchors ul li a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.img_cabecera{
+    background-image: url(./img/petcare-header.jpg);
+    background-repeat: no-repeat;
+    border: 1px solid;
+    height: 600px;
+}
