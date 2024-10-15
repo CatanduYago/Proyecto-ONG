@@ -116,6 +116,7 @@ nav div {
     justify-content: space-between;
     margin-bottom: 40px;
     padding: 20px;
+    border-radius: 10px;
 
 }
 
@@ -149,7 +150,7 @@ a{
 
 #org2 p {
     font-size: 16px;
-    color: #fff5e9;
+    color: #ffffff;
     line-height: 1.6;
     font-family: 'Almarai', sans-serif;
 
