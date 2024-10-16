@@ -162,3 +162,11 @@
     font-size: 0.9em;
     color: white;
 }
+
+.portada{
+    margin: 50px 0 50px 0;
+}
+
+.titulo-portada{
+    width: 100%;
+}
