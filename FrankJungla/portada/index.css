@@ -9,8 +9,6 @@ body {
     font-family: 'Open Sans', sans-serif;
     color: #333;
     line-height: 1.6;
-    padding: 0 15px;
-    /* Agregamos padding para que el contenido no toque los bordes */
 }
 
 /* Hero Section */
@@ -94,12 +92,12 @@ body {
 .imagenes {
     display: flex;
     justify-content: center;
-    row-gap: 1rem;
+    gap: 2rem;
     flex-wrap: wrap;
 }
 
 .imagenes img {
-    width: 25%;
+    width: 30%;
     border-radius: 10px;
     transition: transform 0.3s ease;
 }
@@ -183,6 +181,22 @@ footer {
 
 /* Media Queries for Responsiveness */
 
+/* Medium devices (tablets) */
+@media (max-width: 1024px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .imagenes img {
+        width: 45%;
+    }
+
+    .logro {
+        width: 45%;
+        margin: 1rem 0;
+    }
+}
+
 /* Small devices (phones) */
 @media (max-width: 600px) {
 
@@ -206,16 +220,16 @@ footer {
     }
 
     .imagenes {
+        gap: 0rem;
+        row-gap: 1rem;
         flex-direction: column;
-        /* Coloca las imágenes una debajo de otra */
         align-items: center;
-        /* Centra las imágenes */
     }
 
     .imagenes img {
         padding: 0%;
         margin: 0%;
-        
+        width: 100%;  /* Asegúrate que esta regla se aplique en pantallas pequeñas */
     }
 
     .logros-contenido {
@@ -230,21 +244,5 @@ footer {
 
     .impacto-video {
         max-width: 100%;
-    }
-}
-
-/* Medium devices (tablets) */
-@media (max-width: 1024px) {
-    .hero h1 {
-        font-size: 2.5rem;
-    }
-
-    .imagenes img {
-        width: 45%;
-    }
-
-    .logro {
-        width: 45%;
-        margin: 1rem 0;
     }
 }
