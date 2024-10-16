@@ -24,7 +24,7 @@ nav div {
 }
 
 .logo img {
-    height: 50px;
+    height: 200px;
 }
 
 .anchors ul {
@@ -90,7 +90,7 @@ section .texto-section{
 }
 
 .animal-card:hover {
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
     
 }
 
@@ -119,9 +119,25 @@ section .texto-section{
     background-color: #0056b3;
 }
 
-@media (max-width: 600px) {
-    body {
-        background-color: red;
+@media (max-width: 632.54px) {
+    nav {
+        height: 60px;
+    }
+
+    .texto-bienvenida {
+        text-align: center;
+        padding-right: 50px;
+    }
+
+    .logo img {
+        height: 100px;
+    }
+
+    .animales-section {
+        padding:30px;
+        display: grid;
+        text-align: center; 
+        grid-template-rows: repeat(3, 1fr);
     }
 }
 
