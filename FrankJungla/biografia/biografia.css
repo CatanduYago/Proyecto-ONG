@@ -9,7 +9,7 @@ html, body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     color: #000000;
-    line-height: 1.8;
+    line-height: 1.6;
 }
 
 body {
@@ -47,25 +47,33 @@ body {
 
 .flex-container {
     display: flex;
-    align-items: center;
-    padding: 20px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 20;
     margin: 20px auto;
     background-color: transparent;
     width: 80%;
 }
 
-.flex-container.reverse {
-    flex-direction: row-reverse;
-}
-
 .section-image {
-    width: 40%;
-    max-width: 300px;
-    margin-left: 20px;
+    max-width: 100%;
+    border-radius: 15px;
 }
 
-.section-image.rounded-image {
-    border-radius: 15px;
+.frank-working {
+    width: 30%;
+    height: 200px;
+    margin: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.sanctuary-image {
+    width: 30%;
+    height: 190px;
+    margin: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .section-text {
@@ -90,3 +98,148 @@ footer {
     width: 100%;
     margin-top: auto;
 }
+
+@media (max-width: 1024px) {
+    .flex-container {
+        flex-direction: row;
+        align-items: flex-start;
+        width: 90%;
+        margin: 0 auto;
+        padding: 0px;
+    }
+
+    .section-text {
+        width: 60%;
+        margin: 20px;
+        order: 2;
+    }
+
+    .frank-working {
+        width: 40%;
+        height: auto;
+        margin: 20px;
+        order: 1;
+    }
+
+    .sanctuary-image {
+        width: 40%;
+        height: auto;
+        margin: 20px;
+        order: 3;
+    }
+
+    .header-text {
+        max-width: 80%;
+        padding: 15px; 
+        font-size: 1.2rem;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .section-text {
+        width: 90%; 
+        order: 1; 
+    }
+
+    .frank-working, .sanctuary-image {
+        width: 90%; 
+        height: auto; 
+        margin: 20px 0;
+        order: 2;
+    }
+
+    .header-text {
+        max-width: 90%;
+        padding: 15px; 
+        font-size: 1.1rem; 
+    }
+}
+
+@media (max-width: 600px) {
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%; 
+    }
+
+    .section-text {
+        order: 1; 
+        width: 90%;
+    }
+
+    .frank-working, .sanctuary-image {
+        order: 2; 
+        width: 95%; 
+        height: auto; 
+        margin: 30px 0;
+    }
+
+    .header-text {
+        max-width: 90%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 320px) {
+    .frank-working, .sanctuary-image {
+        width: 90%; 
+        height: auto;
+        margin: 0 auto 15px;
+    }
+
+    .header-text {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+@media (min-width: 1024px) {
+    .flex-container {
+        flex-direction: row;
+        width: 80%;
+    }
+
+    .frank-working {
+        width: 30%;
+        height: 200px;
+        margin: 40px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        order: 1;
+    }
+
+    .section-text {
+        width: 60%;
+        order: 2;
+    }
+
+    .sanctuary-image {
+        width: 30%;
+        height: 190px;
+        margin: 40px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        order: 3;
+    }
+
+    .section-text:nth-of-type(2) {
+        width: 60%;
+        order: 4;
+    }
+}
+
