@@ -41,10 +41,13 @@ nav div {
 }
 
 .img_cabecera{
-    background-image: url(./img/petcare-header.jpg);
+    background-image: linear-gradient(to right, rgba(29, 29, 29, 0.7), rgba(0, 0, 0, 0)), url(./img/petcare-header.jpg);
     background-repeat: no-repeat;
-    border: 1px solid;
-    height: 660px;
+    border: 1px solid black;
+    height: 70vh;
+    padding-left: 100px;
+    color: white;
+    font-size: large;
 }
 
 @media (max-width: 768px) {
