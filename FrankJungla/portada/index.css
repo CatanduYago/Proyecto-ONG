@@ -9,6 +9,8 @@ body {
     font-family: 'Open Sans', sans-serif;
     color: #333;
     line-height: 1.6;
+    padding: 0 15px;
+    /* Agregamos padding para que el contenido no toque los bordes */
 }
 
 /* Hero Section */
@@ -20,6 +22,7 @@ body {
     align-items: center;
     text-align: center;
     color: white;
+    padding: 0 15px;
 }
 
 .hero h1 {
@@ -37,6 +40,7 @@ body {
     font-size: 1.2rem;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    font-weight: 600;
 }
 
 .btn:hover {
@@ -49,6 +53,7 @@ body {
     align-items: center;
     padding: 3rem 2rem;
     background-color: #f4f4f4;
+    flex-wrap: wrap;
 }
 
 .impacto-texto {
@@ -64,6 +69,8 @@ body {
 .impacto-video {
     flex: 1;
     max-width: 600px;
+    padding: 1rem 0;
+    /* Ajuste para margen entre texto y video */
 }
 
 .impacto-video video {
@@ -87,7 +94,8 @@ body {
 .imagenes {
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    row-gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .imagenes img {
@@ -116,6 +124,7 @@ body {
 .logros-contenido {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .logro {
@@ -123,6 +132,7 @@ body {
     padding: 2rem;
     border-radius: 10px;
     width: 250px;
+    margin: 1rem;
     transition: background-color 0.3s ease;
 }
 
@@ -169,4 +179,72 @@ footer {
     text-align: center;
     padding: 1rem;
     font-size: 0.9rem;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Small devices (phones) */
+@media (max-width: 600px) {
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    .impacto-texto h2 {
+        font-size: 1.5rem;
+    }
+
+    .galeria {
+        padding: 2rem 1rem;
+        background-color: #fff;
+        text-align: center;
+    }
+
+    .imagenes {
+        flex-direction: column;
+        /* Coloca las imágenes una debajo de otra */
+        align-items: center;
+        /* Centra las imágenes */
+    }
+
+    .imagenes img {
+        padding: 0%;
+        margin: 0%;
+        
+    }
+
+    .logros-contenido {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logro {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .impacto-video {
+        max-width: 100%;
+    }
+}
+
+/* Medium devices (tablets) */
+@media (max-width: 1024px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .imagenes img {
+        width: 45%;
+    }
+
+    .logro {
+        width: 45%;
+        margin: 1rem 0;
+    }
 }
