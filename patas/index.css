@@ -5,7 +5,6 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #ffdcbf;
 }
 
 nav {
@@ -40,20 +39,89 @@ nav div {
     color: #ffffff;
 }
 
-.img_cabecera{
-    background-image: linear-gradient(to right, rgba(29, 29, 29, 0.7), rgba(0, 0, 0, 0)), url(./img/petcare-header.jpg);
-    background-repeat: no-repeat;
-    border: 1px solid black;
-    height: 70vh;
-    padding-left: 100px;
-    color: white;
-    font-size: large;
+.img_cabecera {
+    height: 92vh;
+    background-image: linear-gradient(to right, rgb(40, 40, 40), transparent), url('./img/petcare-header.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center; 
+    padding-left: 50px; 
 }
 
-@media (max-width: 768px) {
-    .img_cabecera{
-        height: 500px;
-        width: 100%;
+.texto-bienvenida {
+    color: white;
+}
+
+.texto-bienvenida h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+
+.texto-bienvenida p {
+    font-size: 1.5em;
+}
+
+section .texto-section{
+    padding-top: 70px;
+    text-align: center;
+}
+.texto-section h1{
+    font-size: 2.8em;
+}
+.texto-section p{
+    font-size: 1.5em;
+    color: rgb(66, 66, 66);
+}
+.animales-section {
+    padding:40px;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+}
+.animal-card {
+    background-color: #fff;
+    width: 350px;
+    padding: 20px 20px 40px 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.animal-card:hover {
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+    
+}
+
+.animal-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.animal-card h3 {
+    margin: 15px 0;
+    font-size: 2.2em;
+}
+
+.animal-card button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.animal-card button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+    body {
+        background-color: red;
     }
 }
 
