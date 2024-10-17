@@ -1,21 +1,26 @@
+/* Cargar fuente personalizada */
 @font-face {
     font-family: 'Almarai';
     src: url("./Almarai-Regular.ttf");
 }
+
+/* Estilos generales */
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Almarai', sans-serif;
 }
 
+/* Navegación (Header) */
 nav {
     display: flex;
     justify-content: space-around;
     height: 80px;
     background-color: #1D7874;
-    font-family: 'Almarai';
-    text-transform: uppercase;
-    letter-spacing: 1px;
     color: #ffffff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-size: cover;
 }
 
 nav div {
@@ -27,6 +32,7 @@ nav div {
     height: 200px;
 }
 
+/* Lista de enlaces de navegación */
 .anchors ul {
     display: flex;
     list-style: none;
@@ -39,16 +45,21 @@ nav div {
     color: #ffffff;
 }
 
+/* Imagen de la cabecera*/
 .img_cabecera {
     height: 92vh;
     background-image: linear-gradient(to right, rgb(40, 40, 40), transparent), url('./img/petcare-header.jpg');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     display: flex;
-    align-items: center; 
-    padding-left: 50px; 
+    align-items: center;
+    padding-left: 50px;
+    margin: 0;
+    width: 100vw;
 }
 
+/* Texto de bienvenida en la cabecera */
 .texto-bienvenida {
     color: white;
 }
@@ -62,23 +73,29 @@ nav div {
     font-size: 1.5em;
 }
 
-section .texto-section{
+/* Sección principal */
+section .texto-section {
     padding-top: 70px;
     text-align: center;
 }
-.texto-section h1{
+
+.texto-section h1 {
     font-size: 2.8em;
 }
-.texto-section p{
+
+.texto-section p {
     font-size: 1.5em;
     color: rgb(66, 66, 66);
 }
+
+/* Sección de animales */
 .animales-section {
-    padding:40px;
+    padding: 40px;
     display: flex;
     justify-content: space-around;
     background-color: white;
 }
+
 .animal-card {
     background-color: #fff;
     width: 350px;
@@ -91,7 +108,6 @@ section .texto-section{
 
 .animal-card:hover {
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-    
 }
 
 .animal-card img {
@@ -105,6 +121,7 @@ section .texto-section{
     font-size: 2.2em;
 }
 
+/* Botón en la tarjeta de animal (aunque no está presente en el HTML actual, lo he dejado por si se quiere usar) */
 .animal-card button {
     background-color: #007BFF;
     color: white;
@@ -119,45 +136,17 @@ section .texto-section{
     background-color: #0056b3;
 }
 
-@media (max-width: 632.54px) {
-    nav {
-        height: 60px;
-    }
-
-    .texto-bienvenida {
-        text-align: center;
-        padding-right: 50px;
-    }
-
-    .logo img {
-        height: 100px;
-    }
-
-    .animales-section {
-        padding:30px;
-        display: grid;
-        text-align: center; 
-        grid-template-rows: repeat(3, 1fr);
-    }
-}
-
-
-
-
-
-
-
-
-
+/* Footer (Pie de página) */
 .footer {
     padding: 40px 20px;
     text-align: left;
+    background-color: #f8f8f8;
 }
 
 .footer-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Tres columnas */
-    gap: 20px; /* Espacio entre columnas */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
 .footer-section {
@@ -172,6 +161,7 @@ section .texto-section{
     margin: 5px 0;
 }
 
+/* Estilo de los enlaces sociales */
 .social-link {
     text-decoration: none;
     color: #007BFF;
@@ -181,10 +171,55 @@ section .texto-section{
     text-decoration: underline;
 }
 
+/* Sección inferior del footer */
+
+/* Footer (Pie de página) */
+.footer {
+    padding: 40px 20px;
+    background-color: #f8f8f8;
+}
+
+/* Contenedor del footer en línea */
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    align-items: center; 
+    background-color: #b2bac2;
+}
+
 .footer-bottom {
     text-align: center;
     font-size: 0.9em;
     color: #fffbfb;
     background-color: #1D7874;
     height: 75px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 632.54px) {
+    .img_cabecera {
+        background-size: cover;
+        width: 100vw;
+    }
+
+    /* Ajustar el logo */
+    .logo img {
+        height: 100px;
+    }
+
+    /* Centrar texto de bienvenida */
+    .texto-bienvenida {
+        text-align: center;
+        padding-right: 50px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+    }
+    
+
 }
