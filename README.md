@@ -17,3 +17,8 @@ Página web de una protectora de animales (Patas) con una página principal divi
 
 - [Paleta de colores](https://coolors.co/071e22-1d7874-679289-f4c095-ee2e31)
 - [Diseño](https://www.figma.com/design/hYBOyQaiCwswWqN2OVdd5O/Untitled?node-id=0-1&t=4Hld9jGuPimRevyn-1)
+
+# NORMAS PARA TODAS LAS PAGINAS
+- TEXTOS SIEMPRE JUSTIFICADOS
+- 100% REACTIVOS LAS PAGINAS DEBEN VERSE BIEN EN LAS RESOLUCIONES: 320PX, 375PX, 425PX, 768PX, 1024PX, 1440PX, 1920PX
+- NAVIGATION COMUN PARA TODOS
