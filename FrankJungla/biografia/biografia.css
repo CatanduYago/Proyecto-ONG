@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
@@ -32,25 +33,25 @@ body {
 
 .header-text {
     position: absolute;
-    bottom: 30px;
-    right: 30px;
+    bottom: 5vh;
+    right: 5vw;
     background: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(10px);
     border-radius: 15px;
     color: #000000;
-    padding: 20px;
+    padding: 2vw;
     font-size: 1.2rem;
     line-height: 1.4;
-    max-width: 600px;
-    text-align: left;
+    max-width: 60vw;
+    text-align: justify;
 }
 
 .flex-container {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    padding: 20;
-    margin: 20px auto;
+    padding: 2vw;
+    margin: 2vh auto;
     background-color: transparent;
     width: 80%;
 }
@@ -60,237 +61,151 @@ body {
     border-radius: 15px;
 }
 
-.frank-working {
-    width: 30%;
-    height: 200px;
-    margin: 40px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
+.frank-working,
 .sanctuary-image {
     width: 30%;
-    height: 190px;
-    margin: 40px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    height: auto;
+    margin: 4vh 2vw;
 }
 
 .section-text {
     width: 60%;
+    padding: 1vw;
+    text-align: justify;
 }
 
 h2 {
     color: #000000;
-    margin-bottom: 10px;
-    font-size: 1.8rem;
+    margin-bottom: 1vh;
+    font-size: 2.5vw;
+    text-align: justify;
 }
 
 p {
-    margin-bottom: 15px;
+    margin-bottom: 1.5vh;
+    text-align: justify;
 }
 
 footer {
     background-color: #2c3e50;
     color: white;
     text-align: center;
-    padding: 15px;
+    padding: 2vh;
     width: 100%;
     margin-top: auto;
 }
 
-@media (max-width: 1024px) {
-    .flex-container {
-        flex-direction: row;
-        align-items: flex-start;
-        width: 90%;
-        margin: 0 auto;
-        padding: 0px;
+@media (max-width: 1440px) {
+    .frank-working  {
+        width: 45%;
     }
 
     .section-text {
-        width: 60%;
-        margin: 20px;
-        order: 2;
+        width: 50%;
+        font-size: x-large;
     }
 
-    .frank-working {
-        width: 40%;
-        height: auto;
-        margin: 20px;
-        order: 1;
+    .flex-container {
+        margin: 2vh 2vh;
+        width: 100%;
+    }
+    .sanctuary-image{
+        width: 45%;
     }
 
-    .sanctuary-image {
-        width: 40%;
-        height: auto;
-        margin: 20px;
-        order: 3;
+    .section-text {
+        width: 50%;
+        font-size: x-large;
     }
 
-    .header-text {
-        max-width: 80%;
-        padding: 15px; 
-        font-size: 1.2rem;
+    .flex-container {
+        margin: 2vh 2vh;
+        width: 100%;
     }
+
 }
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+    h2 {
+        font-size: 3rem;
+        text-align: justify;
+    }
+
+    p {
+        font-size: 1.2rem;
+        text-align: justify;
+    }
+
     .flex-container {
         flex-direction: column;
         align-items: center;
-        width: 100%;
+        width: 90%;
     }
 
     .section-text {
-        width: 90%; 
-        order: 1; 
+        width: 90%;
+        order: 1;
+        text-align: justify;
     }
 
-    .frank-working, .sanctuary-image {
-        width: 90%; 
-        height: auto; 
-        margin: 20px 0;
-        order: 2;
+    .frank-working,
+    .sanctuary-image {
+        width: 80%;
+        margin: 3vh auto;
+    }
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 3.5vw;
     }
 
-    .header-text {
-        max-width: 90%;
-        padding: 15px; 
-        font-size: 1.1rem; 
+    .section-text,
+    .frank-working,
+    .sanctuary-image {
+        width: 90%;
+        margin: 2vh auto;
     }
 }
 
 @media (max-width: 600px) {
-    .flex-container {
-        flex-direction: column;
-        align-items: center;
-        width: 100%; 
+    h2 {
+        font-size: 4vw;
     }
 
-    .section-text {
-        order: 1; 
-        width: 90%;
-    }
-
-    .frank-working, .sanctuary-image {
-        order: 2; 
-        width: 95%; 
-        height: auto; 
-        margin: 30px 0;
+    .section-text,
+    .frank-working,
+    .sanctuary-image {
+        width: 95%;
+        margin: 3vh auto;
     }
 
     .header-text {
-        max-width: 90%;
-        padding: 15px;
+        font-size: 1rem;
+        padding: 2vh 2vw;
     }
 }
 
 @media (max-width: 320px) {
-    .frank-working, .sanctuary-image {
-        width: 90%; 
-        height: auto;
-        margin: 0 auto 15px;
+
+    .frank-working,
+    .sanctuary-image {
+        width: 100%;
+        margin: 1vh auto;
     }
 
     .header-text {
-        font-size: 1rem;
-        padding: 10px;
+        font-size: 0.9rem;
+        padding: 1vh 1vw;
     }
 
     h2 {
-        font-size: 1.5rem;
+        font-size: 5vw;
     }
 
     p {
-        font-size: 1rem;
-    }
-}
-@media (min-width: 1024px) {
-    .flex-container {
-        flex-direction: row;
-        width: 80%;
-    }
-
-    .frank-working {
-        width: 30%;
-        height: 200px;
-        margin: 40px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        order: 1;
-    }
-
-    .section-text {
-        width: 60%;
-        order: 2;
-    }
-
-    .sanctuary-image {
-        width: 30%;
-        height: 190px;
-        margin: 40px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        order: 3;
-    }
-
-    .section-text:nth-of-type(2) {
-        width: 60%;
-        order: 4;
-    }
-}
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-
-    .menu {
-        position: relative;
-    }
-
-    #menu-toggle {
-        display: none;
-    }
-
-    .menu-icon {
-        display: inline-block;
-        cursor: pointer;
-    }
-
-    .anchors {
-        display: none;
-        position: absolute;
-        top: 100%;
-        right: 0;
-        background: #1D7874;
-        z-index: 1000;
-    }
-
-    #menu-toggle:checked + .menu-icon + .anchors {
-        display: block;
-    }
-
-    .anchors ul {
-        display: flex;
-        flex-direction: column;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        font-size:medium;
-    }
-
-    .anchors li {
-        padding: 10px;
-    }
-
-    .anchors li a {
-        text-decoration: none;
-        color: black;
-        display: block;
-    }
-
-    .anchors li a:hover {
-        background: #f0f0f0;
+        font-size: 0.9rem;
     }
 }
