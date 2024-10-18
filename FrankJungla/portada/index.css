@@ -11,7 +11,44 @@ body {
     color: #333;
     line-height: 1.6;
 }
+nav {
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    background-color: #1D7874;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-size: 21px;
+}
 
+nav div {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.anchors ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.anchors ul li a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #ffffff;
+}
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+}
 /* Hero Section */
 .hero {
     background: url('images/frank-header.jpeg') no-repeat center center/cover;

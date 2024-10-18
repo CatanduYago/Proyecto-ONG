@@ -55,7 +55,13 @@ nav div {
     margin: 0;
     width: 100vw;
 }
+#menu-toggle {
+    display: none;
+}
 
+.menu-icon {
+    display: none;
+}
 /* Texto de bienvenida en la cabecera */
 .texto-bienvenida {
     color: white;
