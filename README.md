@@ -5,6 +5,16 @@ Daniel Zarco Leyton, Ana Gomez Paniagua, Ismael Pavon: 2 secciones de 2 protecto
 Antonio y Ale Gonzalez: Fran cuesta
 
 ## Secciones
+### Portada
+
+- [x] Realización del carrusel
+- [x] Realización del navbar con anclas que redirigen en la misma pagina a la info y al acceso directo a las ong
+- [x] Relleno de informacion sobre las ong
+- [x] Realización del footer con las redes sociales
+- [x] Navbar responsive en movil
+- [ ] Implementacxion navbar en todas las paginas
+
+
 
 ### Frank de la jungla
 Ale: tengo que poner que hace frank, todo sobre la vida de frank en una pagina aparte
