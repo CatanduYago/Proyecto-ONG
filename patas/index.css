@@ -1,8 +1,5 @@
-/* Cargar fuente personalizada */
-@font-face {
-    font-family: 'Almarai';
-    src: url("./Almarai-Regular.ttf");
-}
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
 
 /* Estilos generales */
 body {
@@ -197,9 +194,60 @@ section .texto-section {
     justify-content: center;
     align-items: center;
 }
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 
+    .menu {
+        position: relative;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    .menu-icon {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .anchors {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: #1D7874;
+        z-index: 1000;
+    }
+
+    #menu-toggle:checked + .menu-icon + .anchors {
+        display: block;
+    }
+
+    .anchors ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        font-size:medium;
+    }
+
+    .anchors li {
+        padding: 10px;
+    }
+
+    .anchors li a {
+        text-decoration: none;
+        color: black;
+        display: block;
+    }
+
+    .anchors li a:hover {
+        background: #f0f0f0;
+    }
+}
 /* Responsividad para pantallas pequeñas */
 @media (max-width: 632.54px) {
+    
     .img_cabecera {
         background-size: cover;
         width: 100vw;

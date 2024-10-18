@@ -4,6 +4,8 @@ Yago Catalano Andújar: Crear índice que hable sobre prtectoras de animales
 Daniel Zarco Leyton, Ana Gomez Paniagua, Ismael Pavon: 2 secciones de 2 protectoras
 
 ## Secciones
+
+
 ### Portada
 
 - [x] Realización del carrusel
@@ -11,7 +13,7 @@ Daniel Zarco Leyton, Ana Gomez Paniagua, Ismael Pavon: 2 secciones de 2 protecto
 - [x] Relleno de informacion sobre las ong
 - [x] Realización del footer con las redes sociales
 - [x] Navbar responsive en movil
-- [ ] Implementacxion navbar en todas las paginas
+- [x] Implementacxion navbar en todas las paginas
 
 
 
