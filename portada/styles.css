@@ -46,57 +46,65 @@ nav div {
     position: relative;
     width: 100%;
     max-width: 800px;
-    margin: 20px auto;
+    margin: auto;
     overflow: hidden;
 }
 
 .carousel-inner {
     display: flex;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease;
+    width: 100%;
 }
 
 .carousel-item {
-    min-width: 100%;
-    box-sizing: border-box;
-    display: none;
+    width: 100%;
+    flex: 1 0 100%;
 }
 
-.carousel-item.active {
+.carousel-item img {
+    width: 100%;
     display: block;
 }
 
-.carousel img {
-    width: 100%;
-    height: auto;
-    border-radius: 20px;
+input[name="slides"] {
+    display: none;
+}
+
+#slide-1:checked ~ .carousel-inner {
+    transform: translateX(0%);
+}
+
+#slide-2:checked ~ .carousel-inner {
+    transform: translateX(-100%);
+}
+
+#slide-3:checked ~ .carousel-inner {
+    transform: translateX(-200%);
 }
 
 .carousel-indicators {
-    position: absolute;
-    bottom: 35px;
-    left: 50%;
-    transform: translateX(-50%);
     display: flex;
     justify-content: center;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
 }
 
-.carousel-indicators .dot {
+.dot {
     height: 12px;
     width: 12px;
-    margin: 0 10px;
+    margin: 0 5px;
     background-color: #8FC2B8;
-    border: 2px solid #071E22;
     border-radius: 50%;
-    display: inline-block;
-}
-
-.carousel-indicators .dot:hover {
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-.carousel-indicators .active {
+input[name="slides"]:checked + label.dot {
     background-color: #1D7874;
 }
+
 
 #titulos {
     text-align: center;

@@ -35,8 +35,12 @@
 
     <main>
         <section class="carousel">
+            <input type="radio" name="slides" id="slide-1" checked>
+            <input type="radio" name="slides" id="slide-2">
+            <input type="radio" name="slides" id="slide-3">
+            
             <div class="carousel-inner">
-                <div class="carousel-item active">
+                <div class="carousel-item">
                     <img src="./images/carrusel1.jpg" alt="Photo 1">
                 </div>
                 <div class="carousel-item">
@@ -46,13 +50,14 @@
                     <img src="./images/adana.png" alt="Photo 3">
                 </div>
             </div>
-
+            
             <div class="carousel-indicators">
-                <span class="dot active" data-slide="0"></span>
-                <span class="dot" data-slide="1"></span>
-                <span class="dot" data-slide="2"></span>
+                <label for="slide-1" class="dot"></label>
+                <label for="slide-2" class="dot"></label>
+                <label for="slide-3" class="dot"></label>
             </div>
         </section>
+        
 
         <section class="organizacion">
 
