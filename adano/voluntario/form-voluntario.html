@@ -3,53 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/ProyectoONG/adano/estilos.css">
+    <link rel="stylesheet" href="/adano/estilos.css">
     <title>Hazte Voluntario</title>
 </head>
 <body>
-    <header>
-        <nav id="nav">
-            <div class="logo">
-                <img src="./images/logo.png" alt="Logo">
-            </div>
-            <div class="menu">
-                <input type="checkbox" id="menu-toggle">
-                <label for="menu-toggle" class="menu-icon">
-                    <img src="./images/menu.png" alt="Menú" width="35px">
-                </label>
-                <div class="anchors">
-                    <ul>
-                        <li><a href="./index.html" aria-label="Enlace a la portada">Inicio</a></li>
-                        <li><a href="/FrankJungla/portada/index.html" aria-label="Enlace al santuario libertad">Santuario Libertad</a></li>
-                        <li><a href="/patas/index.html" aria-label="Enlace a Patas">Patas</a></li>
-                        <li><a href="#org3" aria-label="Enlace a la organizacion 3">Org 3</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <nav class="menu">
-        <div><a href="#">QUIENES SOMOS</a></div>
-        <div><a href="#">ACTUALIDAD</a></div>
-        <div><a href="#">COLABORA</a></div>
-        <div><a href="#">DONA</a></div>
-        <div><a href="#">EN ADOPCIÓN</a></div>
-        <div><a href="#">CONTACTO</a></div>
-    </nav>
-
-    <br><br><br><br><br>
-
     <div class="contenedor-voluntario">
         <div class="titulo-voluntario"><h1>HAZTE VOLUNTARIO/A</h1></div>
-        <div class="boton-volver"><a href="/ProyectoONG/adano/index/index.html"><button>VOLVER A LA PÁGINA DE INICIO</button></a></div>
+        <div class="boton-volver"><a href="/adano/index/index.html"><button>VOLVER A LA PÁGINA DE INICIO</button></a></div>
     </div>
     
-    <div class="portada"><img src="/ProyectoONG/adano/images/portada-voluntario.webp" alt=""></div>
+    <div class="portada"><img src="/adano/images/portada-voluntario.webp" alt=""></div>
     <div class="titulo-portada">
         <h1>Únete al Voluntariado de ProteBadajoz</h1>
         <p>En ProteBadajoz, creemos que un voluntario es mucho más que alguien que dona su tiempo;
             es un héroe que elige construir un mundo mejor para nuestros amigos peludos. 
             Ser voluntario no solo es una elección, es un compromiso ético y moral con la causa de los animales necesitados.</p>
+    </div>
+    <div class="contenedor-cuerpo">
+        <div class="descripcion-cuerpo">
+            <h1>Razones para unirte a nosotros:</h1>
+            <p>Convertirte en voluntario/a es la puerta de entrada a un mundo de satisfacción personal, 
+                aprendizaje continuo y conexiones humanas significativas. No hay compensación económica, 
+                pero las recompensas van más allá de lo monetario: adquieres habilidades valiosas, 
+                obtienes experiencias enriquecedoras y construyes relaciones que durarán toda la vida.</p>
+        </div>
+        <div class="descripcion-cuerpo">
+            <h1>Haciendo la diferencia:</h1>
+            <p>Al unirte a ProteBadajoz, te conviertes en un eslabón vital para la consecución de nuestros objetivos. 
+                Tu dedicación asegura el éxito de nuestros programas y campañas, 
+                marcando una diferencia tangible en la vida de los animales. 
+                Tu papel es muy importante para darles una segunda oportunidad y construir un futuro mucho mejor para ellos.</p>
+        </div>
+    </div>
+
+    <div class="contenedor-cuerpo">
+        <div class="descripcion-cuerpo">
+            <h1>Objetivos y tareas:</h1>
+            <p>¡Como voluntario/a, tu misión es fundamental!
+                Colaborarás activamente  en lo que te podamos necesitar para garantizar el cumplimiento de los fines 
+                de la Asociación y contribuirás al desarrollo de nuestros programas y campañas. Todas las actividades 
+                son llevadas a cabo con tu apoyo, desde la administración hasta el cuidado directo de los animales.</p>
+        </div>
+        <div class="descripcion-cuerpo">
+            <h1>Tu colaboración puede abarcar:</h1>
+            <p>Apoyo Administrativo. <br>
+                Apoyo Veterinario. <br>
+                Apoyo en Colonias Felinas. <br>
+                Casa de Acogida Temporal. <br>
+                Atención a los Animales. <br>
+                Educación. <br>
+                Eventos... y mucho más.</p>
+        </div>
+    </div>
+
+    <br><br><br>
+
+    <div class="contenedor-form">
+        <div class="form-voluntariado">
+            <h1>Formulario de voluntariado</h1>
+            <hr>
+            <form action="">
+                <label for="nombre">Nombre</label><br>
+                <input type="text" id="nombre"><br>
+                <label for="apellidos">Apellidos</label><br>
+                <input type="text" id="apellidos"><br>
+                <label for="fecha_nac">Fecha de Nacimiento</label><br>
+                <input type="text" id="fecha_nac"><br>
+                <label for="email">Correo electrónico</label><br>
+                <input type="email" id="email"><br>
+                <label for="tlf">Teléfono</label><br>
+                <input type="text" id="tlf"><br>
+                <label for="tipo">Tipo de voluntariado</label><br>
+                <p><input type="checkbox">Cualquier Tipo de Voluntariado</p>
+                <p><input type="checkbox">Apoyo Administrativo</p>
+                <p><input type="checkbox">Apoyo Veterinario</p>
+                <p><input type="checkbox">Apoyo en Colonias Felinas</p>
+                <p><input type="checkbox">Casa de Acogida Temporal</p>
+                <p><input type="checkbox">Atención de los Animales</p>
+                <p><input type="checkbox">Educación</p>
+                <p><input type="checkbox">Eventos</p>
+            </form>
+        </div>
     </div>
 </body>
 </html>
