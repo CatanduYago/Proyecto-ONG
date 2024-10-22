@@ -190,7 +190,13 @@ footer {
     width: 25px;
     margin-right: 10px;
 }
+#menu-toggle {
+    display: none;
+}
 
+.menu-icon {
+    display: none;
+}
 /* Responsive styles for mobile devices */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 
