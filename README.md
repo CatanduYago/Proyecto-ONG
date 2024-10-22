@@ -38,5 +38,12 @@ Página web de una protectora de animales (Patas) con una página principal divi
 - TEXTOS SIEMPRE JUSTIFICADOS
 - 100% REACTIVOS LAS PAGINAS DEBEN VERSE BIEN EN LAS RESOLUCIONES: 320PX, 375PX, 425PX, 768PX, 1024PX, 1440PX, 1920PX
 - NAVIGATION COMUN PARA TODOS
-- USAR LA FUENTE `@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');` EN TODOS LOS CSS
+- USAR LA FUENTE EN TODOS LOS CSS:
+```css
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    font-family: 'Karla';
+}
+```
 - TODOS LOS CONTENIDOS QUE SE REUTILIZEN EN OTRAS PÁGINAS, DEBEN IR A LA CARPETA `COMPONENTS`
