@@ -109,10 +109,12 @@ nav div {
     /* Ajuste para margen entre texto y video */
 }
 
-.impacto-video video {
+.impacto-video iframe {
     width: 100%;
+    height: 50vh; /* Ocupa el 50% de la altura de la ventana del navegador */
     border-radius: 10px;
 }
+
 
 /* Galería Section */
 .galeria {
@@ -245,6 +247,12 @@ footer {
     .btn {
         padding: 0.8rem 1.5rem;
         font-size: 1rem;
+    }
+
+
+    .impacto {
+        flex-direction: column;
+        align-items: center;
     }
 
     .impacto-texto h2 {
