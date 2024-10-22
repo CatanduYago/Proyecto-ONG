@@ -247,6 +247,12 @@ footer {
         font-size: 1rem;
     }
 
+
+    .impacto {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .impacto-texto h2 {
         font-size: 1.5rem;
     }
