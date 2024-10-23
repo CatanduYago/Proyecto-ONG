@@ -45,7 +45,7 @@ nav div {
 /* Imagen de la cabecera*/
 .img_cabecera {
     height: 92vh;
-    background-image: linear-gradient(to right, rgb(40, 40, 40), transparent), url('./img/petcare-header.jpg');
+    background-image: linear-gradient(to right, rgba(40, 40, 40, 0.700), transparent), url('./img/petcare-header.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -150,6 +150,29 @@ section .texto-section {
 
 .social-link:hover {
     text-decoration: underline;
+}
+
+.adopcion-section {
+    height: 50vh;
+    background-image: linear-gradient(to right, rgba(40, 40, 40, 0.700), transparent), url('./img/perro2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+}
+
+.boton{
+    background-color:#1D7874;
+    color: #f0f0f0;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
 }
 
 footer {
