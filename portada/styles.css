@@ -14,7 +14,7 @@ body {
 }
 
 body.dark-mode {
-    background-color: #1D1D1D;
+    background-color: #232323;
     color: #E0E0E0;
 }
 
@@ -23,21 +23,30 @@ body.dark-mode {
     background-color: #1D7874;
     color: #E0E0E0;
 }
-
+.dark-mode .org-text p {
+    color: #E0E0E0; 
+}
 .dark-mode-toggle {
-    background: #1D7874;
+    background-color: #1D7874;
     color: #E0E0E0;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
-#org2.dark-mode{
-    color: #ffffff;
+.dark-mode #org2 {
+    background-color: #90b5b3;
+}
+.dark-mode #org2 p{
+    color: #000000;
+
 }
 .dark-mode-toggle.dark {
-    background: #8FC2B8;
+    background-color: #ffffff;
 
+}
+.dark-mode .org-text h3{
+    color: #000000;
 }
 .switch {
     font-size: 17px;
@@ -126,7 +135,10 @@ nav div {
     width: 100%;
     max-width: 800px;
     margin: auto;
+    margin-top: 25px;
     overflow: hidden;
+    border-radius: 15px;
+    filter: drop-shadow(0px 0px 10px #65b3af)
 }
 
 .carousel-inner {
@@ -142,8 +154,14 @@ nav div {
 
 .carousel-item img {
     width: 100%;
+    height: 600px; 
+    object-fit: cover;
     display: block;
 }
+.carousel-item img {
+    filter: drop-shadow(0px 2px 0px #ffffff);
+}
+
 
 input[name="slides"] {
     display: none;
@@ -171,18 +189,20 @@ input[name="slides"] {
 }
 
 .dot {
-    height: 12px;
-    width: 12px;
-    margin: 0 5px;
+    height: 17px;
+    width: 17px;
+    margin: 0 7px;
     background-color: #8FC2B8;
     border-radius: 50%;
     cursor: pointer;
     transition: background-color 0.3s;
+    box-shadow: 0px 0px 2px 0px #ffffff;   
 }
 
 input[name="slides"]:checked+label.dot {
-    background-color: #1D7874;
+    background-color: #1D7874; 
 }
+
 
 
 #titulos {
@@ -286,18 +306,17 @@ footer {
     display: none;
 }
 
-/* Responsive styles for mobile devices */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     .switch {
-        width: 2.5em; /* Reducir el ancho del switch */
-        height: 1.5em; /* Reducir la altura del switch */
+        width: 2.5em; 
+        height: 1.5em; 
     }
 
     .slider:before {
-        height: 1.1em; /* Reducir la altura del círculo */
-        width: 1.1em; /* Reducir el ancho del círculo */
-        left: 5%; /* Ajustar la posición horizontal del círculo */
-        bottom: 10%; /* Ajustar la posición vertical del círculo */
+        height: 1.1em;
+        width: 1.1em;
+        left: 5%; 
+        bottom: 10%; 
     }
     .menu {
         position: relative;

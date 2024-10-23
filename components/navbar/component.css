@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+body{
+    font-family: 'Karla';
+    margin: 0;
+}
+
 nav {
     display: flex;
     justify-content: space-around;
@@ -29,6 +36,7 @@ nav div {
     text-decoration: none;
     color: #ffffff;
 }
+
 #menu-toggle {
     display: none;
 }
@@ -38,7 +46,17 @@ nav div {
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .switch {
+        width: 2.5em; 
+        height: 1.5em; 
+    }
 
+    .slider:before {
+        height: 1.1em;
+        width: 1.1em;
+        left: 5%; 
+        bottom: 10%; 
+    }
     .menu {
         position: relative;
     }
@@ -61,7 +79,7 @@ nav div {
         z-index: 1000;
     }
 
-    #menu-toggle:checked + .menu-icon + .anchors {
+    #menu-toggle:checked+.menu-icon+.anchors {
         display: block;
     }
 
@@ -71,7 +89,7 @@ nav div {
         list-style: none;
         margin: 0;
         padding: 0;
-        font-size:medium;
+        font-size: medium;
     }
 
     .anchors li {

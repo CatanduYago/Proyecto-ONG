@@ -3,6 +3,8 @@
 
 ### Portada
 
+Página principal. Muestra un carrusel con imagenes de las protectoras y ONGs así cómo información adicional de estas. Al clicar sobre los distintos nombres se redirige a las paginas correspondientes.
+
 ### Frank de la jungla
 
 Página web sobre frank de la jungla, a que se ha dedicado, como es su santuario, su realacion/lucha a favor de los animales
@@ -40,8 +42,8 @@ Página web de una protectora de animales (Patas) con una página principal divi
 
 ### Portada
 
-- [ ] MODO OSCURO
-- [ ] CARRUSEL
+- [x] MODO OSCURO
+- [x] CARRUSEL
 - [ ] SUBIR NAVBAR COMUN COPIAR Y PEGAR EN LOS DEMAS PROYECTOS
 
 ### ProteBadajoz
