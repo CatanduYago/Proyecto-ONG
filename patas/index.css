@@ -212,7 +212,9 @@ footer {
     padding-top: 30px;
 }
 
-/* Responsividad para pantallas pequeñas */
+/* -------------------------------------------------------*/
+
+/* -------------------------------------------------------*/
 @media (max-width: 1920PX) {
 
     .img_cabecera {
@@ -237,6 +239,9 @@ footer {
 
 }
 
+/* -------------------------------------------------------*/
+
+/* -------------------------------------------------------*/
 @media (max-width: 800px) {
 
     #foto1 {
@@ -258,7 +263,9 @@ footer {
 
 }
 
+/* -------------------------------------------------------*/
 
+/* -------------------------------------------------------*/
 @media (max-width: 768px) {
 
     #foto1 {
@@ -334,7 +341,10 @@ footer {
     }
 }
 
-@media (max-width: 481px) {
+/* -------------------------------------------------------*/
+
+/* -------------------------------------------------------*/
+@media ( max-width: 481px) {
 
     #foto1 {
         content: url('img/Captura-removebg-preview.png');
@@ -350,6 +360,7 @@ footer {
         color: white;
         text-align: center;
         margin: auto;
+        font-size: 90%;
         padding-left: 10px;
     }
     
@@ -409,11 +420,11 @@ footer {
     }
 }
 
-@media (max-width: 433px) {
+/* -------------------------------------------------------*/
 
-    body *{
-        border: 4px solid;
-    }
+/* -------------------------------------------------------*/
+@media (min-width:0px) and (max-width: 432px) {
+
     #foto1 {
         content: url('img/Captura-removebg-preview.png');
         width: 50px;
@@ -484,5 +495,11 @@ footer {
     .footer-bottom p {
         padding-top: 20px;
         font-size: 17px;
+    }
+
+    section{
+        width: 100%;
+        margin: 0;
+        padding: 0;
     }
 }
