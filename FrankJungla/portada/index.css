@@ -1,5 +1,6 @@
 /* Global Styles */
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +12,8 @@ body {
     color: #333;
     line-height: 1.6;
 }
+
+/*Navbar*/
 nav {
     display: flex;
     justify-content: space-around;
@@ -42,6 +45,7 @@ nav div {
     text-decoration: none;
     color: #ffffff;
 }
+
 #menu-toggle {
     display: none;
 }
@@ -49,6 +53,7 @@ nav div {
 .menu-icon {
     display: none;
 }
+
 /* Hero Section */
 .hero {
     background: url('images/frank-header.jpeg') no-repeat center center/cover;
@@ -111,7 +116,8 @@ nav div {
 
 .impacto-video iframe {
     width: 100%;
-    height: 50vh; /* Ocupa el 50% de la altura de la ventana del navegador */
+    height: 50vh;
+    /* Ocupa el 50% de la altura de la ventana del navegador */
     border-radius: 10px;
 }
 
@@ -227,10 +233,6 @@ footer {
         font-size: 2.5rem;
     }
 
-    .imagenes img {
-        width: 45%;
-    }
-
     .logro {
         width: 45%;
         margin: 1rem 0;
@@ -275,7 +277,8 @@ footer {
     .imagenes img {
         padding: 0%;
         margin: 0%;
-        width: 100%;  /* Asegúrate que esta regla se aplique en pantallas pequeñas */
+        width: 100%;
+        /* Asegúrate que esta regla se aplique en pantallas pequeñas */
     }
 
     .logros-contenido {
@@ -292,7 +295,19 @@ footer {
         max-width: 100%;
     }
 }
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .switch {
+        width: 2.5em;
+        height: 1.5em;
+    }
+
+    .slider:before {
+        height: 1.1em;
+        width: 1.1em;
+        left: 5%;
+        bottom: 10%;
+    }
 
     .menu {
         position: relative;
@@ -303,7 +318,7 @@ footer {
     }
 
     .menu-icon {
-        display: inline-block;
+        display: flex;
         cursor: pointer;
     }
 
@@ -316,7 +331,7 @@ footer {
         z-index: 1000;
     }
 
-    #menu-toggle:checked + .menu-icon + .anchors {
+    #menu-toggle:checked+.menu-icon+.anchors {
         display: block;
     }
 
@@ -326,7 +341,7 @@ footer {
         list-style: none;
         margin: 0;
         padding: 0;
-        font-size:medium;
+        font-size: medium;
     }
 
     .anchors li {
