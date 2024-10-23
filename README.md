@@ -7,7 +7,9 @@
 
 Página web sobre frank de la jungla, a que se ha dedicado, como es su santuario, su realacion/lucha a favor de los animales
 
-### Adana
+### ProteBadajoz
+
+Web que refleja en su página principal la misión y los valores de ProteBadajoz, con un enlace en el pie de la página que lleva a un formulario para invitar a los usuarios a unirse como voluntarios.
 
 ### Patas
 
@@ -42,9 +44,9 @@ Página web de una protectora de animales (Patas) con una página principal divi
 - [ ] CARRUSEL
 - [ ] SUBIR NAVBAR COMUN COPIAR Y PEGAR EN LOS DEMAS PROYECTOS
 
-### Adano
+### ProteBadajoz
 
-- [ ] TEXTOS SIEMPRE JUSTIFICADOS
+- [x] TEXTOS SIEMPRE JUSTIFICADOS
 - [ ] 100% REACTIVOS LAS PAGINAS DEBEN VERSEBIEN EN LAS RESOLUCIONES: 320PX, 375PX, 425PX,768PX, 1024PX, 1440PX, 1920PX
 - [ ] NAVIGATION COMUN PARA TODOS
 
