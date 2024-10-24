@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
 
-
 /* Estilos generales */
 * {
     margin: 0;
@@ -12,12 +11,12 @@
 nav {
     display: flex;
     justify-content: space-around;
-    height: 80px;
+    height: auto;
     background-color: #1D7874;
-    color: #ffffff;
-    letter-spacing: 1px;
     text-transform: uppercase;
-    background-size: cover;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-size: 21px;
 }
 
 nav div {
@@ -29,7 +28,6 @@ nav div {
     height: 200px;
 }
 
-/* Lista de enlaces de navegación */
 .anchors ul {
     display: flex;
     list-style: none;
@@ -42,10 +40,18 @@ nav div {
     color: #ffffff;
 }
 
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+}
+
 /* Imagen de la cabecera*/
 .img_cabecera {
     height: 92vh;
-    background-image: linear-gradient(to right, rgba(40, 40, 40, 0.700), transparent), url('./img/petcare-header.jpg');
+    background-image: linear-gradient(to right, rgba(40, 40, 40, 0.700), transparent), url('../img/petcare-header.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -64,7 +70,7 @@ nav div {
 }
 
 #foto1 {
-    content: url('img/patas_white_black-removebg-preview.png');
+    content: url('../img/patas_white_black-removebg-preview.png');
 }
 
 /* Texto de bienvenida en la cabecera */
@@ -154,7 +160,7 @@ section .texto-section {
 
 .adopcion-section {
     height: 50vh;
-    background-image: linear-gradient(to right, rgba(40, 40, 40, 0.700), transparent), url('./img/perro2.jpg');
+    background-image: linear-gradient(to right, rgba(40, 40, 40, 0.700), transparent), url('../img/perro2.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -212,84 +218,104 @@ footer {
     padding-top: 30px;
 }
 
-/* -------------------------------------------------------*/
+@media (max-width: 1100px) {
+    .animales-section {
+        display: block;
+        text-align: center;
+    }
 
-/* -------------------------------------------------------*/
-@media (max-width: 1920PX) {
+    .animal-card {
+        width: 80%;
+        margin: 20px auto;
+    }
 
-    .img_cabecera {
-        background-size: cover;
-        width: 100vw;
+    .animal-card img {
+        width: 80%;
+        margin: 0 auto; 
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .footer-container div {
+        margin: 10px auto;
+        width: 100%;
+    }
+
+    #mapa{
+        width: 100%;
+    }
+
+    .footer-section {
+        margin: auto;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .footer-bottom {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+
+    .footer-bottom p {
+        padding-top: 20px;
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 550px) {
+    nav {
+        justify-content: space-between; 
+        align-items: center;
+        padding: 0 10px;
+        height: 60px; 
     }
 
     .logo img {
-        height: 100px;
+        height: 100px; 
+        width: auto;
     }
 
-    .texto-bienvenida {
+    .menu {
+        position: relative;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        position: relative;
+    }
+
+
+    .anchors ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #1D7874; 
+        width: 100%; 
+        padding: 10px 0;
+        list-style: none;
         text-align: center;
-        padding-right: 50px;
     }
 
-    .footer-container {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-
-}
-
-/* -------------------------------------------------------*/
-
-/* -------------------------------------------------------*/
-@media (max-width: 800px) {
-
-    #foto1 {
-        content: url('img/Captura-removebg-preview.png');
-        width: 50px;
-        height: 40px;
-    }
-
-    .anchors ul li a{
-        font-size: 80%;
-    }
-
-    .img_cabecera {
-        height: 80vh;
-        background-size: cover;
-        background-position: center;
-        width: 100%;
-    }
-
-}
-
-/* -------------------------------------------------------*/
-
-/* -------------------------------------------------------*/
-@media (max-width: 768px) {
-
-    #foto1 {
-        content: url('img/Captura-removebg-preview.png');
-        width: 50px;
-        height: 40px;
-    }
-
-    .anchors ul li a{
-        font-size: 80%;
-    }
-
-    .texto-bienvenida {
-        color: white;
-        text-align: center;
-        margin: auto;
-        padding-left: 10px;
-    }
     
-    .img_cabecera {
-        height: 80vh;
-        background-size: cover;
-        background-position: center;
-        width: 100%;
+    .texto-bienvenida h1{
+        font-size: 2em;
+    }
+
+    .texto-section h1{
+        font-size: 1.5em;
+    }
+
+    .texto-section p{
+        font-size: 1.1em;
     }
 
     .animales-section {
@@ -318,10 +344,10 @@ footer {
     .footer-container div {
         margin: 10px auto;
         width: 100%;
-    }
+    }s
 
     #mapa{
-        width: 100%;
+        width: 50%;
     }
 
     .footer-section {
@@ -341,232 +367,125 @@ footer {
     }
 }
 
-/* -------------------------------------------------------*/
-
-/* -------------------------------------------------------*/
-@media ( max-width: 481px) {
-
-    #foto1 {
-        content: url('img/Captura-removebg-preview.png');
-        width: 50px;
-        height: 40px;
-    }
-
-    .anchors ul li a{
-        font-size: 80%;
-    }
-
-    .texto-bienvenida {
-        color: white;
-        text-align: center;
-        margin: auto;
-        font-size: 90%;
-        padding-left: 10px;
-    }
+@media (max-width: 419px) {
     
-    .img_cabecera {
-        height: 80vh;
-        background-size: cover;
-        background-position: center;
-        width: 100%;
-    }
-
-    .animales-section {
-        display: block;
-        text-align: center;
-    }
-
-    .animal-card {
-        width: 80%;
-        margin: 20px auto;
-    }
-
-    .animal-card img {
-        width: 80%;
-        margin: 0 auto; 
-    }
-
-    .footer-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 20px;
-    }
-
-    .footer-container div {
-        margin: 10px auto;
-        width: 100%;
-    }
-
-    #mapa{
-        width: 100%;
-    }
-
-    .footer-section {
+    .texto-bienvenida{
         margin: auto;
-        text-align: center;
-        padding-top: 20px;
-    }
-
-    .footer-bottom {
-        font-size: 0.9em;
-        padding: 10px;
-    }
-
-    .footer-bottom p {
-        padding-top: 20px;
-        font-size: 17px;
-    }
-}
-
-/* -------------------------------------------------------*/
-
-/* -------------------------------------------------------*/
-@media (min-width:0px) and (max-width: 432px) {
-
-    #foto1 {
-        content: url('img/Captura-removebg-preview.png');
-        width: 50px;
-        height: 40px;
-    }
-
-    .anchors ul li a{
-        font-size: 80%;
-    }
-
-    .texto-bienvenida {
-        color: white;
-        text-align: center;
-        margin: auto;
-        padding-left: 10px;
-    }
-    
-    .img_cabecera {
-        height: 80vh;
-        background-size: cover;
-        background-position: center;
-        width: 100%;
-    }
-
-    .animales-section {
-        display: block;
-        text-align: center;
-    }
-
-    .animal-card {
-        width: 80%;
-        margin: 20px auto;
-    }
-
-    .animal-card img {
-        width: 80%;
-        margin: 0 auto; 
-    }
-
-    .footer-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 20px;
-    }
-
-    .footer-container div {
-        margin: 10px auto;
-        width: 100%;
-    }
-
-    #mapa{
-        width: 100%;
-    }
-
-    .footer-section {
-        margin: auto;
-        text-align: center;
-        padding-top: 20px;
-    }
-
-    .footer-bottom {
-        font-size: 0.9em;
-        padding: 10px;
-    }
-
-    .footer-bottom p {
-        padding-top: 20px;
-        font-size: 17px;
-    }
-
-    section{
-        width: 100%;
-        margin: 0;
         padding: 0;
+        text-align: center;
+    }
+    .texto-bienvenida h1{
+        font-size: 2em;
+    }
+
+    .texto-section h1{
+        font-size: 1.5em;
+    }
+
+    .texto-section p{
+        font-size: 1.1em;
+    }
+
+    .animales-section {
+        display: block;
+        text-align: center;
+    }
+
+    .animal-card {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .animal-card img {
+        width: 90%;
+        margin: 0 auto; 
+    }
+
+    .adopcion-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center; 
+    }
+    
+    .adopcion-section .texto-bienvenida {
+        margin: 0 auto;
+    }
+    
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .footer-container div {
+        margin: 10px auto;
+        width: 100%;
+    }s
+
+    #mapa{
+        width: 100%;
+    }
+
+    .footer-section {
+        margin: auto;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .footer-bottom {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+
+    .footer-bottom p {
+        padding-top: 20px;
+        font-size: 17px;
     }
 }
 
-/* -------------------------------------------------------*/
+@media (max-width: 320px) {
+    
+    header, 
+    footer, 
+    main .img_cabecera, 
+    .texto-section, 
+    .animales-section, 
+    .adopcion-section .texto-bienvenida h1, 
+    .adopcion-section .texto-bienvenida p {
+        display: none;
+    }
 
-/* -------------------------------------------------------*/
+    .adopcion-section {
+        height: 100vh; 
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        background-color: #1D7874;
+    }
 
-.img_cabecera_adopcion {
-    height: 92vh;
-    background-image: linear-gradient(to right, rgba(40, 40, 40, 0.700), transparent), url('./img/perro3.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    margin: 0;
-    width: 100%;
-}
+    .boton {
+        width: 70%; 
+        height: 50px; 
+        font-size: 1.2rem; 
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        background-color: #FFFFFF; 
+        color: #1D7874; 
+        border: 2px solid #1D7874; 
+        border-radius: 10px; 
+        text-align: center;
+        padding: 0.5rem;
+        transition: background-color 0.3s ease;
+        content: url(../img/patas_icono.png);
+    }
 
-.animal-card-adopcion {
-    background-color: #fff;
-    width: 300px;
-    padding: 20px 20px 40px 20px;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.animal-card-adopcion:hover {
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-}
-
-.animal-card-adopcion img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-.animal-card-adopcion h3 {
-    margin: 15px 0;
-    font-size: 2.2em;
-}
-
-.animal-card-adopcion button {
-    background-color: #007BFF;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.animal-card-adopcion button:hover {
-    background-color: #0056b3;
-}
-
-.conocelos-section {
-    height: 50vh;
-    background-image: linear-gradient(to right, rgba(40, 40, 40, 0.700), transparent), url('./img/mustang.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    margin: 0;
-    width: 100%;
+    .boton:hover {
+        background-color: #1D7874;
+        color: #FFFFFF; 
+    }
 }
