@@ -558,3 +558,15 @@ footer {
 .animal-card-adopcion button:hover {
     background-color: #0056b3;
 }
+
+.conocelos-section {
+    height: 50vh;
+    background-image: linear-gradient(to right, rgba(40, 40, 40, 0.700), transparent), url('./img/mustang.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+}
