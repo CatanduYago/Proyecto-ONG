@@ -266,6 +266,31 @@ footer {
         padding-top: 20px;
         font-size: 17px;
     }
+
+    .animal-card-adopcion {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat( 1fr);
+        grid-gap: 20px;
+        justify-items: center;
+        width: 100%;
+        margin: auto;
+        padding: 0;
+    }
+
+    .animal-card-adopcion {
+        width: 250px;
+        margin: auto;
+        padding: 0;
+    }
+
+    .animal-card-adopcion h3 {
+        font-size: 1.8em;
+    }
+
+    .animal-card-adopcion img {
+        width: 100%;
+    }
 }
 
 @media (max-width: 550px) {
@@ -365,6 +390,34 @@ footer {
         padding-top: 20px;
         font-size: 17px;
     }
+
+    .animal-card-adopcion {
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+        grid-gap: 20px;
+        justify-items: center;
+        align-items: center;
+        width: 100%;
+        margin: auto;
+        padding: 0;
+        flex: 1;
+        overflow: hidden;
+    }
+
+    .animal-card-adopcion {
+        width: 250px;
+        margin: auto;
+        padding: 0;
+    }
+
+    .animal-card-adopcion h3 {
+        font-size: 1.8em;
+    }
+
+    .animal-card-adopcion img {
+        width: 100%;
+    }
+    
 }
 
 @media (max-width: 419px) {
