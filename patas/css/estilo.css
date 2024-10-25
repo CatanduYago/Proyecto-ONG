@@ -9,47 +9,6 @@
     font-family: 'Karla';
 }
 
-/* Navegación (Header) */
-nav {
-    display: flex;
-    justify-content: space-around;
-    height: auto;
-    background-color: #1D7874;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #ffffff;
-    font-size: 21px;
-}
-
-nav div {
-    display: flex;
-    align-items: center;
-}
-
-.logo img {
-    height: 200px;
-}
-
-.anchors ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-}
-
-.anchors ul li a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #ffffff;
-}
-
-#menu-toggle {
-    display: none;
-}
-
-.menu-icon {
-    display: none;
-}
-
 /* Imagen de la cabecera*/
 .img_cabecera {
     height: 92vh;
