@@ -451,7 +451,9 @@ body{
     }
     .valores,
     .voluntario,
-    .imagenes,
+    .imagenes {
+       
+    }
     .contenedor,
     .contenedor-cuerpo,
     .form-voluntariado {
