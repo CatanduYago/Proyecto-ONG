@@ -179,6 +179,7 @@ footer {
     padding-top: 30px;
 }
 
+
 @media (max-width: 1100px) {
     .animales-section {
         display: block;
@@ -502,4 +503,22 @@ footer {
         background-color: #1D7874;
         color: #FFFFFF; 
     }
+}
+
+@media (max-width: 700px) {
+    #foto1{
+        content: url(/patas/img/Captura-removebg-preview.png);
+        width: 70%;
+        height: 5vh;
+    }
+}
+
+@media (max-width: 662px) {
+    #foto1{
+        content: url(/patas/img/Captura-removebg-preview.png);
+        width: 70%;
+        height: 5vh;
+    }
+
+    
 }
