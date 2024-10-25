@@ -256,12 +256,6 @@ footer {
 }
 
 @media (max-width: 550px) {
-    nav {
-        justify-content: space-between; 
-        align-items: center;
-        padding: 0 10px;
-        height: 60px; 
-    }
 
     .logo img {
         height: 100px; 
@@ -331,7 +325,7 @@ footer {
     .footer-container div {
         margin: 10px auto;
         width: 100%;
-    }s
+    }
 
     #mapa{
         width: 50%;
@@ -473,7 +467,6 @@ footer {
     .adopcion-section .texto-bienvenida p {
         display: none;
     }
-
     .adopcion-section {
         height: 100vh; 
         display: flex;
