@@ -357,7 +357,6 @@ body{
     .contenedor,
     .contenedor-cuerpo,
     .form-voluntariado {
-        margin: 0 4%;
         width: 100%;
         flex-direction: column;
     }
@@ -447,13 +446,10 @@ body{
 @media (min-width: 431px) and (max-width: 768px) {
     .portada img{
         width: 100%;
-        margin: 0;
+        margin: 0 0 0 4%;
     }
     .valores,
     .voluntario,
-    .imagenes {
-       
-    }
     .contenedor,
     .contenedor-cuerpo,
     .form-voluntariado {
@@ -464,7 +460,7 @@ body{
 
     .valores {
         margin-bottom: 10px;
-        width: 100%;
+        width: 80%;
     }
     .voluntario h1,
     .voluntario h2,
@@ -477,6 +473,11 @@ body{
     .contenedor-voluntario-index{
         display: inline-block;
         width: 100%;
+    }
+
+    .imagenes{
+        width: 70%;
+        margin: 0;
     }
 
     .img-voluntario{
