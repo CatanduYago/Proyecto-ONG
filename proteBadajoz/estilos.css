@@ -1,12 +1,312 @@
-/*.portada img {
+/*
+.portada img {
     width: 100%;
     height: 600px;
+    object-fit: cover;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contenedor img {
+    margin: 34px 0 0 0;
+    width: 100%;
+    height: 297px;
+}
+
+.valores {
+    margin: 30px 0 0 0;
+    width: 25%;
+    box-sizing: border-box;
+}
+
+.valores h1,
+.voluntario h1,
+.titulo-portada h1,
+.descripcion-cuerpo h1 {
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 40px 0 30px 0;
+    text-align: justify;
+}
+
+.valores p,
+.voluntario p,
+.voluntario h2,
+.voluntario .voluntario-h2,
+.titulo-portada p,
+.descripcion-cuerpo p {
+    font-family: 'Gill Sans', 'Gill Sans', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0 20px;
+    font-size: 1.1em;
+    color: #566573;
+    text-align: justify;
+}
+
+.imagenes {
+    width: 25%;
+}
+
+.voluntario {
+    width: 100%;
+    margin: 0;
+}
+
+.img-voluntario {
+    width: 90%;
+    margin: 0 0 0 5%;
+}
+
+.img-voluntario img {
+    height: 700px;
+    width: 100%;
+}
+
+.boton-voluntario button,
+.boton-volver button {
+    border: none;
+    border-radius: 5px;
+    padding: 15px 25%;
+    background-color: #3498db;
+    font-weight: bold;
+    font-size: 0.9em;
+    color: white;
+    margin: 2% 0 0 8%;
+}
+
+.boton-voluntario button:hover,
+.boton-volver button:hover {
+    background-color: black;
+}
+
+.contenedor-voluntario {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f4f6f6;
+}
+
+.portada {
+    margin: 50px 0 30px 0;
+}
+
+.contenedor-cuerpo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.form-voluntariado {
+    width: 70%;
+    background-color: #eaeded;
+    padding: 0 0 20px 0;
+}
+
+.form-voluntariado h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.5em;
+    color: #3498db;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.form-voluntariado label {
+    margin: 15px 0 0 30px;
+    color: #e74c3c;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+.form-voluntariado input {
+    margin: 5px 0 20px 30px;
+    width: 40%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #566573;
+}
+
+.form-voluntariado input[type="checkbox"] {
+    margin: 0 10px 0 30px;
+    width: 1%;
+}
+
+
+@media screen and (max-width: 320px) {
+    .portada img {
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .valores,
+    .imagenes,
+    .contenedor,
+    .contenedor-cuerpo,
+    .form-voluntariado {
+        margin: 0;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .valores h1,
+    .voluntario h1,
+    .voluntario h2,
+    .titulo-portada h1,
+    .titulo-portada p {
+        margin: 5px;
+        text-align: justify;
+        font-size: 1.5em;
+    }
+
+    .valores p,
+    .voluntario p,
+    .form-voluntariado label {
+        margin: 0;
+        text-align: justify; 
+    }
+
+    .descripcion-cuerpo {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .form-voluntariado {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .boton-voluntario button,
+    .boton-volver button {
+        padding: 10px 20px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .valores,
+    .imagenes {
+        width: 100%;
+    }
+
+    .valores p,
+    .voluntario p {
+        margin: 0;
+        text-align: justify; 
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .valores h1,
+    .voluntario h1 {
+        font-size: 2em;
+    }
+
+    .valores p,
+    .voluntario p {
+        font-size: 1em;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .valores,
+    .imagenes,
+    .contenedor,
+    .contenedor-cuerpo,
+    .form-voluntariado {
+        margin: 0;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .valores {
+        margin-bottom: 10px;
+    }
+
+    .voluntario h1,
+    .voluntario h2,
+    .titulo-portada h1,
+    .titulo-portada p {
+        margin: 5px;
+        text-align: justify;
+    }
+
+    
+    .portada img {
+        height: auto;
+        max-height: 300px; 
+        width: 100%; 
+        object-fit: cover; 
+    }
+
+    
+    .contenedor img,
+    .imagenes img,
+    .img-voluntario img {
+        height: auto;
+        max-height: 250px;
+        width: 100%;
+        object-fit: contain;
+        margin: 0; 
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .portada img {
+        height: auto;
+        max-height: 600px; 
+        object-fit: cover;
+    }
+
+    
+}
+
+@media screen and (max-width: 1440px) {
+    .portada img {
+        height: auto;
+        max-height: 600px; 
+        object-fit: cover;
+    }
+}
+*/
+
+@import url('https://fonts.googleapis.com/css2? family=Karla:ital,wght@0,200..800;1,200..800&    display=swap');
+
+* {
+    font-family: 'Karla';
+}
+
+body{
+    margin: 0;
+}
+
+.portada img {
+    width: 100%;
 }
 
 .contenedor {
     display: flex;
     justify-content: center;  
     align-items: center;
+}
+
+.contenedor-voluntario-index{
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+}
+
+.contenedor-voluntario-index img{
+    margin: 34px 0 0 0;
+    width: 100%;
+    height: 297px;
 }
 
 .contenedor img {
@@ -22,17 +322,16 @@
 
 .valores h1 {
     color: black;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 40px 40px 30px 40px;
     text-align: justify;
 }
 
 .valores p {
-    font-family: 'Gill Sans', 'Gill Sans', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0 40px 50px 40px;
     font-size: 1.1em;
     color: #566573;
     text-align: justify;
+}
 
 .imagenes {
     width: 25%;
@@ -216,246 +515,207 @@
     width: 1%;
 }
 
-@media screen and (max-width: 768px) {
+
+
+@media (max-width: 320px) {
+    /* Asegurar que el body no tiene márgenes */
+    body, html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .portada img {
+        width: 100%; /* Asegurarse de que la imagen ocupe todo el ancho */
+        margin: 0; /* Eliminar márgenes de la imagen */
+    }
+
+    /* Ajuste para contenedores y secciones */
     .valores,
     .imagenes,
     .contenedor,
     .contenedor-cuerpo,
     .form-voluntariado {
-        margin: 0;
-        width: 100%;
+        margin: 0 !important; /* Remover márgenes */
+        width: 100%; /* Asegurar que ocupa todo el ancho */
         flex-direction: column;
+        box-sizing: border-box; /* Evitar desbordamientos */
     }
 
-    .valores {
-        margin-bottom: 10px;
-    }
-
+    /* Estilos para h1 y h2: margen reducido y ancho completo */
     .voluntario h1,
     .voluntario h2,
     .titulo-portada h1,
-    .titulo-portada p {
-        margin: 5px;
+    .titulo-portada p,
+    .valores h1 {
+        margin: 2% 5%;
+        width: 80%;
         text-align: justify;
     }
 
-    .descripcion-cuerpo {
-        width: 100%;
-        margin: 5px 0;
-    }
-
-    .form-voluntariado {
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    .boton-voluntario button,
-    .boton-volver button {
-        padding: 10px 20px;
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .portada img {
-        height: 300px;
-    }
-
-    .valores h1,
-    .voluntario h1 {
-        font-size: 1.8em;
-        text-align: justify;
-    }
-
-    .valores p,
-    .voluntario p,
-    .form-voluntariado label {
-        font-size: 0.9em;
-        margin: 0 10px;
-        text-align: justify;
-    }
-
-    .form-voluntariado input {
+    .voluntario p{
+        margin: 0 5%;
         width: 80%;
     }
-}*/
 
-/* Base styles */
-.portada img {
-    width: 100%;
-    height: 600px;
-    object-fit: cover; /* Mantiene la proporción de la imagen */
-}
-
-.contenedor {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.contenedor img {
-    margin: 34px 0 0 0;
-    width: 100%;
-    height: 297px;
-}
-
-.valores {
-    margin: 30px 0 0 0;
-    width: 25%;
-    box-sizing: border-box;
-}
-
-.valores h1,
-.voluntario h1,
-.titulo-portada h1,
-.descripcion-cuerpo h1 {
-    color: black;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin: 40px 0 30px 0;
-    text-align: justify;
-}
-
-.valores p,
-.voluntario p,
-.voluntario h2,
-.voluntario .voluntario-h2,
-.titulo-portada p,
-.descripcion-cuerpo p {
-    font-family: 'Gill Sans', 'Gill Sans', Calibri, 'Trebuchet MS', sans-serif;
-    margin: 0;
-    padding: 0 20px;
-    font-size: 1.1em;
-    color: #566573;
-    text-align: justify;
-}
-
-.imagenes {
-    width: 25%;
-}
-
-.voluntario {
-    width: 100%;
-    margin: 0;
-}
-
-.img-voluntario {
-    width: 90%;
-    margin: 0 0 0 5%;
-}
-
-.img-voluntario img {
-    height: 700px;
-    width: 100%;
-}
-
-.boton-voluntario button,
-.boton-volver button {
-    border: none;
-    border-radius: 5px;
-    padding: 15px 25%;
-    background-color: #3498db;
-    font-weight: bold;
-    font-size: 0.9em;
-    color: white;
-    margin: 2% 0 0 8%;
-}
-
-.boton-voluntario button:hover,
-.boton-volver button:hover {
-    background-color: black;
-}
-
-.contenedor-voluntario {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #f4f6f6;
-}
-
-.portada {
-    margin: 50px 0 30px 0;
-}
-
-.contenedor-cuerpo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.form-voluntariado {
-    width: 70%;
-    background-color: #eaeded;
-    padding: 0 0 20px 0;
-}
-
-.form-voluntariado h1 {
-    text-align: center;
-    margin: 20px 0;
-    font-size: 1.5em;
-    color: #3498db;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.form-voluntariado label {
-    margin: 15px 0 0 30px;
-    color: #e74c3c;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 500;
-    font-size: 1.1em;
-}
-
-.form-voluntariado input {
-    margin: 5px 0 20px 30px;
-    width: 40%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #566573;
-}
-
-.form-voluntariado input[type="checkbox"] {
-    margin: 0 10px 0 30px;
-    width: 1%;
-}
-
-/* Media Queries */
-@media screen and (max-width: 320px) {
-    .portada img {
-        height: 300px;
-        object-fit: cover; /* Mantiene la proporción de la imagen */
+    .voluntario .voluntario-h2{
+        margin: 0 5%;
+        width: 80%;
     }
 
+
+    /* Estilos para los párrafos */
+    .valores p {
+        margin: 0;
+        padding: 0 !important;
+        width: 100%; /* Ancho completo */
+        font-size: 1.1em; /* Tamaño adecuado del texto */
+        text-align: justify;
+        box-sizing: border-box;
+    }
+
+    .descripcion-cuerpo {
+        width: 100%; /* Ancho completo */
+        margin: 0 !important; /* Eliminar márgenes */
+    }
+
+    /* Formulario centrado y optimizado */
+    .form-voluntariado {
+        width: 100%; /* Ancho completo */
+        margin: 0 !important; /* Eliminar márgenes */
+        padding: 0 !important; /* Eliminar padding */
+        box-sizing: border-box;
+    }
+
+    /* Botones optimizados para pantallas pequeñas */
+    .boton-voluntario button{
+        padding: 10px 20px;
+        width: 100%; /* Botones ocupan todo el ancho */
+        margin: 0 0 0 8%;
+        box-sizing: border-box;
+    }
+
+    /* Alineación y estilo del h1 en .valores */
+    .valores h1 {
+        margin: 2% 0;
+        text-align: center; /* Centrar el título */
+        width: 100%; /* Ancho completo */
+    }
+
+    .contenedor-voluntario-index{
+        display: inline-block;
+        width: 100%;
+    }
+
+    .img-voluntario{
+        width: 100%;
+        margin: 0;
+    }
+
+    .img-voluntario img{
+        width: 100%;
+    }
+
+    .boton-voluntario{
+        width: 85%;
+    }
+
+    .titulo-voluntario h1{
+        font-size: 1em;
+    }
+
+    .boton-volver button{
+        padding: 5px 5px;
+        width: 100%;
+        margin: 0;
+        box-sizing: border-box;
+        font-size: 0.7em;
+    }
+
+    .descripcion-cuerpo h1{
+        margin: 5%;
+    }
+
+    .decripcion-cuerpo p{
+        margin: 5%;
+    }
+
+    .form-voluntariado input[type="checkbox"] {
+        margin: 0 10px 0 30px;
+        width: 4%;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 430px) {
+    .portada img{
+        width: 100%;
+        margin: 4%;
+    }
     .valores,
+    .voluntario,
     .imagenes,
     .contenedor,
     .contenedor-cuerpo,
     .form-voluntariado {
-        margin: 0;
+        margin: 0 4%;
         width: 100%;
         flex-direction: column;
     }
 
-    .valores h1,
+    .voluntario p{
+        margin: 0 5%;
+        width: 80%;
+    }
+
+    .voluntario .voluntario-h2{
+        margin: 0 5%;
+        width: 80%;
+    }
+
+    .valores {
+        margin-bottom: 10px;
+        width: 100%;
+    }
     .voluntario h1,
     .voluntario h2,
     .titulo-portada h1,
     .titulo-portada p {
-        margin: 5px;
+        margin: 2% 5%;
+        width: 80%;
         text-align: justify;
-        font-size: 1.5em;
     }
 
-    .valores p,
-    .voluntario p,
-    .form-voluntariado label {
-        margin: 0;
-        text-align: justify; 
+    .contenedor-voluntario-index{
+        display: inline-block;
+        width: 100%;
     }
 
-    .descripcion-cuerpo {
+    .img-voluntario{
+        width: 100%;
+    }
+
+    .img-voluntario img{
+        width: 92%;
+    }
+
+    .boton-voluntario{
+        width: 85%;
+    }
+
+    .descripcion-cuerpo{
         width: 100%;
         margin: 5px 0;
+    }
+
+    .descripcion-cuerpo h1{
+        width: 100%;
+        margin: 5%;
+    }
+
+    .descripcion-cuerpo p{
+        width: 90%;
+        margin: 5%;
     }
 
     .form-voluntariado {
@@ -463,53 +723,51 @@
         margin: 0 auto;
     }
 
-    .boton-voluntario button,
     .boton-volver button {
+        border: none;
+        border-radius: 5px;
         padding: 10px 20px;
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 375px) {
-    .valores,
-    .imagenes {
-        width: 100%;
+        font-size: 0.7em;
     }
 
-    .valores p,
-    .voluntario p {
-        margin: 0;
-        text-align: justify; 
-    }
-}
-
-@media screen and (max-width: 425px) {
-    .valores h1,
-    .voluntario h1 {
-        font-size: 2em;
-    }
-
-    .valores p,
-    .voluntario p {
+    .titulo-voluntario h1{
         font-size: 1em;
     }
+
+    .form-voluntariado input[type="checkbox"] {
+        margin: 0 10px 0 30px;
+        width: 4%;
+    }
+
+    .form-voluntariado{
+        width: 80%;
+        margin: 5% 0 5% 8%;
+    }
+
+
 }
 
-@media screen and (max-width: 768px) {
+
+@media (min-width: 431px) and (max-width: 768px) {
+    .portada img{
+        width: 100%;
+        margin: 4%;
+    }
     .valores,
+    .voluntario,
     .imagenes,
     .contenedor,
     .contenedor-cuerpo,
     .form-voluntariado {
-        margin: 0;
+        margin: 0 4%;
         width: 100%;
         flex-direction: column;
     }
 
     .valores {
         margin-bottom: 10px;
+        width: 100%;
     }
-
     .voluntario h1,
     .voluntario h2,
     .titulo-portada h1,
@@ -518,30 +776,124 @@
         text-align: justify;
     }
 
-    .portada img {
-        height: auto; /* Permite que la altura se ajuste automáticamente */
-        max-height: 600px; /* Limita la altura máxima */
-        object-fit: cover; /* Mantiene la proporción de la imagen */
+    .contenedor-voluntario-index{
+        display: inline-block;
+        width: 100%;
+    }
+
+    .img-voluntario{
+        width: 100%;
+    }
+
+    .img-voluntario img{
+        width: 90%;
+    }
+
+    .boton-voluntario{
+        width: 90%;
+    }
+
+    .descripcion-cuerpo {
+        width: 100%;
+        margin: 5px 0;
+    }
+    .form-voluntariado {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .titulo-portada{
+        width: 100%;
+    }
+
+    .titulo-portada h1{
+        
+        text-align: justify;
+    }
+
+    .titulo-portada{
+        margin: 1% 1% 1% 4%;
+        text-align: justify;
+    }
+
+    .form-voluntariado input[type="checkbox"] {
+        margin: 0 10px 0 30px;
+        width: 4%;
+    }
+    
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Additional styles for 1024px */
+    .voluntario h1 {
+        font-size: 2.3em;
+    }
+    .voluntario p {
+        font-size: 1.1em;
+    }
+
+    .voluntario{
+        width: 60%;
+        margin: 0;
+    }
+
+    .valores{
+        margin: 0;
+        width: 33%;
+    }
+
+    .imagenes{
+        width: 30%;
+    }
+
+    .img-voluntario{
+        width: 33%;
+    }
+
+    .boton-voluntario button{
+        margin: 2% 0 0 0;
+    }
+
+    .descripcion-cuerpo h1 {
+        margin: 2%;
+        font-size: 1.1em;
+        font-weight: 800;
+        text-align: justify;
+    }
+
+    .descripcion-cuerpo p {
+        margin: 2%;
+        font-size: 0.9em;
+        text-align: justify;
+    }
+
+    .form-voluntariado input[type="checkbox"] {
+        margin: 0 10px 0 30px;
+        width: 4%;
+    }
+
+    .form-voluntariado{
+        margin: 2%;
     }
 }
 
-/* Media Queries para 1024px y 1440px */
-@media screen and (max-width: 1024px) {
-    .portada img {
-        height: auto; /* Permite que la altura se ajuste automáticamente */
-        max-height: 600px; /* Limita la altura máxima */
-        object-fit: cover; /* Mantiene la proporción de la imagen */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .descripcion-cuerpo p {
+        margin: 25px 30px 20px 70px;
+        text-align: justify;
     }
-
-    /* Otras reglas específicas si es necesario */
 }
 
-@media screen and (max-width: 1440px) {
-    .portada img {
-        height: auto; /* Permite que la altura se ajuste automáticamente */
-        max-height: 600px; /* Limita la altura máxima */
-        object-fit: cover; /* Mantiene la proporción de la imagen */
+@media (max-width: 1920px) {
+    /* Additional styles for 1920px */
+    .voluntario h1 {
+        font-size: 3em;
     }
-
-    /* Otras reglas específicas si es necesario */
 }
+
+
+
+
+
+
