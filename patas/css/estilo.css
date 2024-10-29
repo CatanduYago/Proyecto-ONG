@@ -70,6 +70,11 @@ section .texto-section {
     background-color: white;
 }
 
+#mapa{
+    height: 350px;
+    width: 100%;
+}
+
 .animal-card {
     background-color: #fff;
     width: 350px;
@@ -329,6 +334,7 @@ footer {
 
     #mapa{
         width: 50%;
+        height: 260px;
     }
 
     .footer-section {
@@ -437,6 +443,7 @@ footer {
 
     #mapa{
         width: 100%;
+        height: 100px;
     }
 
     .footer-section {
@@ -456,62 +463,10 @@ footer {
     }
 }
 
-@media (max-width: 320px) {
-    
-    header, 
-    footer, 
-    main .img_cabecera, 
-    .texto-section, 
-    .animales-section, 
-    .adopcion-section .texto-bienvenida h1, 
-    .adopcion-section .texto-bienvenida p {
-        display: none;
-    }
-    .adopcion-section {
-        height: 100vh; 
-        display: flex;
-        justify-content: center; 
-        align-items: center; 
-        background-color: #1D7874;
-    }
-
-    .boton {
-        width: 70%; 
-        height: 50px; 
-        font-size: 1.2rem; 
-        display: flex;
-        justify-content: center; 
-        align-items: center;
-        background-color: #FFFFFF; 
-        color: #1D7874; 
-        border: 2px solid #1D7874; 
-        border-radius: 10px; 
-        text-align: center;
-        padding: 0.5rem;
-        transition: background-color 0.3s ease;
-        content: url(../img/patas_icono.png);
-    }
-
-    .boton:hover {
-        background-color: #1D7874;
-        color: #FFFFFF; 
-    }
-}
-
 @media (max-width: 700px) {
     #foto1{
         content: url(/patas/img/Captura-removebg-preview.png);
         width: 70%;
         height: 5vh;
     }
-}
-
-@media (max-width: 662px) {
-    #foto1{
-        content: url(/patas/img/Captura-removebg-preview.png);
-        width: 70%;
-        height: 5vh;
-    }
-
-    
 }
