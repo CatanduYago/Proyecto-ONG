@@ -261,33 +261,69 @@ footer {
 
 @media (max-width: 550px) {
 
-    .logo img {
-        height: 100px; 
-        width: auto;
+    .switch {
+        width: 2.5em;
+        height: 1.5em;
+    }
+
+    .slider:before {
+        height: 1.1em;
+        width: 1.1em;
+        left: 5%;
+        bottom: 10%;
     }
 
     .menu {
         position: relative;
     }
 
-    .menu-icon {
-        display: block;
-        cursor: pointer;
-        position: relative;
+    #menu-toggle {
+        display: none;
     }
 
+    .menu-icon {
+        display: flex;
+        cursor: pointer;
+    }
+
+    .anchors {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: #1D7874;
+        z-index: 1000;
+    }
+
+    #menu-toggle:checked+.menu-icon+.anchors {
+        display: block;
+    }
 
     .anchors ul {
-        display: none;
+        display: flex;
         flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        background-color: #1D7874; 
-        width: 100%; 
-        padding: 10px 0;
         list-style: none;
-        text-align: center;
+        margin: 0;
+        padding: 0;
+        font-size: medium;
+    }
+
+    .anchors li {
+        padding: 10px;
+    }
+
+    .anchors li a {
+        text-decoration: none;
+        color: black;
+        display: block;
+    }
+
+    .anchors li a:hover {
+        background: #f0f0f0;
+    }
+    .logo img {
+        height: 100px; 
+        width: auto;
     }
 
     
