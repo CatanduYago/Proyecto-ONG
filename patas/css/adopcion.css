@@ -1,6 +1,5 @@
 @import url('estilo.css'); 
 @import url('/components/navbar/component.css');
-@import url('/components/navbar-oscuro/styles.css');
 
 body {
     margin: 0;

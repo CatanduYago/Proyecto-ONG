@@ -1,22 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html,
-body {
-    height: 100%;
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #000000;
-    line-height: 1.6;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-}
+/*Navbar*/
 nav {
     display: flex;
     justify-content: space-around;
@@ -48,6 +36,7 @@ nav div {
     text-decoration: none;
     color: #ffffff;
 }
+
 #menu-toggle {
     display: none;
 }
@@ -55,6 +44,21 @@ nav div {
 .menu-icon {
     display: none;
 }
+
+html,
+body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #000000;
+    line-height: 1.6;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 .full-header {
     position: relative;
     width: 100%;
@@ -133,7 +137,7 @@ footer {
 }
 
 @media (max-width: 1440px) {
-    .frank-working  {
+    .frank-working {
         width: 45%;
     }
 
@@ -146,7 +150,7 @@ footer {
         margin: 2vh 2vh;
         width: 100%;
     }
-    .sanctuary-image{
+    .sanctuary-image {
         width: 45%;
     }
 
@@ -159,10 +163,7 @@ footer {
         margin: 2vh 2vh;
         width: 100%;
     }
-
 }
-
-
 
 @media (max-width: 1024px) {
     h2 {
@@ -226,7 +227,6 @@ footer {
 }
 
 @media (max-width: 320px) {
-
     .frank-working,
     .sanctuary-image {
         width: 100%;
@@ -244,5 +244,68 @@ footer {
 
     p {
         font-size: 0.9rem;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .switch {
+        width: 2.5em;
+        height: 1.5em;
+    }
+
+    .slider:before {
+        height: 1.1em;
+        width: 1.1em;
+        left: 5%;
+        bottom: 10%;
+    }
+
+    .menu {
+        position: relative;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    .menu-icon {
+        display: flex;
+        cursor: pointer;
+    }
+
+    .anchors {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: #1D7874;
+        z-index: 1000;
+    }
+
+    #menu-toggle:checked+.menu-icon+.anchors {
+        display: block;
+    }
+
+    .anchors ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        font-size: medium;
+    }
+
+    .anchors li {
+        padding: 10px;
+    }
+
+    .anchors li a {
+        text-decoration: none;
+        color: black;
+        display: block;
+    }
+
+    .anchors li a:hover {
+        background: #f0f0f0;
     }
 }
