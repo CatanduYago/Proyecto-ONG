@@ -122,6 +122,7 @@ nav div {
     display: flex;
     list-style: none;
     padding: 0;
+    font-size: 18px;
 }
 
 
