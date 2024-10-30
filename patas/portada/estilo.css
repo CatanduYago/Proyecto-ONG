@@ -11,7 +11,7 @@
 /* Imagen de la cabecera*/
 .img_cabecera {
     height: 92vh;
-    background-image: linear-gradient(to right, rgba(40, 40, 40, 0.700), transparent), url('../img/petcare-header.jpg');
+    background-image: linear-gradient(to right, rgba(40, 40, 40, 0.700), transparent), url('./images/petcare-header.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -30,7 +30,7 @@
 }
 
 #foto1 {
-    content: url('../img/patas_white_black-removebg-preview2.png');
+    content: url('./images/patas_white_black-removebg-preview2.png');
 }
 
 /* Texto de bienvenida en la cabecera */
@@ -125,7 +125,7 @@ section .texto-section {
 
 .adopcion-section {
     height: 50vh;
-    background-image: linear-gradient(to right, rgba(40, 40, 40, 0.700), transparent), url('../img/perro2.jpg');
+    background-image: linear-gradient(to right, rgba(40, 40, 40, 0.700), transparent), url('./images/perro2.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -244,6 +244,9 @@ footer {
         padding: 0;
     }
 
+    .animales-section{
+        padding: 40px;
+    }
     .animal-card-adopcion {
         width: 250px;
         margin: auto;
@@ -500,7 +503,7 @@ footer {
 
 @media (max-width: 700px) {
     #foto1{
-        content: url(/patas/img/Captura-removebg-preview.png);
+        content: url(./images/Captura-removebg-preview.png);
         width: 70%;
         height: 5vh;
     }

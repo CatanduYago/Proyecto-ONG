@@ -1,4 +1,4 @@
-@import url('estilo.css'); 
+@import url('../portada/estilo.css'); 
 @import url('/components/navbar/component.css');
 
 body {
@@ -8,7 +8,7 @@ body {
 
 .img_cabecera_adopcion {
     height: 92vh;
-    background-image: linear-gradient(to right, rgba(40, 40, 40, 0.700), transparent), url('../img/perro3.jpg');
+    background-image: linear-gradient(to right, rgba(40, 40, 40, 0.700), transparent), url('./images/perro3.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -59,7 +59,7 @@ body {
 
 .conocelos-section {
     height: 50vh;
-    background-image: linear-gradient(to right, rgba(40, 40, 40, 0.700), transparent), url('../img/mustang.jpg');
+    background-image: linear-gradient(to right, rgba(40, 40, 40, 0.700), transparent), url('./images/mustang.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
