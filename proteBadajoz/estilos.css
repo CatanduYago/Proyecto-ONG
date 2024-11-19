@@ -348,7 +348,7 @@ body{
 
 @media (min-width: 321px) and (max-width: 430px) {
     .portada img{
-        width: 100%;
+        width: 92%;
         margin: 4%;
     }
     .valores,
