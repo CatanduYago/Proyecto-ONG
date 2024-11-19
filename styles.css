@@ -237,6 +237,7 @@ input[name="slides"]:checked+label.dot {
     flex-direction: row-reverse;
     padding: 20px;
     color: #ffffff;
+    border-radius: 10px;
 }
 
 .org-text {
